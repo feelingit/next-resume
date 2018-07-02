@@ -1,0 +1,19 @@
+{
+  "name": "next-resume",
+  "description": "Create a multilingual resume with next.js",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Liubov Zelenskaia",
+  "homepage": "https://github.com/feelingit/next-resume",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "scripts": {
+    "dev": "node server.js -p 3000",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  }
+}
