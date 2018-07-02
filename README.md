@@ -44,13 +44,13 @@ You can use [JSON Resume](http://jsonresume.org/) or [JSON Resume Editor](http:/
 
 The default port is 3000. 
 
-If you want to use another port open `/server.js` file. Change the value 3000 to any port you wish:
+If you want to use another port open `/server.js` file and change the value 3000 to any port you wish:
 
 ```js
 const port = 3000
 ```
 
-And then open `/package.json` file. Change the value 3000 to your number: 
+And then open `/package.json` file and change the value 3000 to your number: 
 
 ```json
 "dev": "node server.js -p 3000",
