@@ -22,6 +22,9 @@ app.prepare().then(() => {
     if (pathname === '/') {
       app.render(req, res, '/index', { 'resume': 'resume' })
 
+    // A robots.txt file indicates those parts of your site
+    // you don’t want accessed by search engine crawlers.
+    // Change it as you need.
     } else if (pathname === '/robots.txt') {
       res.writeHead(200, {'Content-Type': 'text/plain'})
       res.end('Disallow: /')
