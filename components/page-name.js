@@ -4,7 +4,6 @@ export default ({name}) =>
     <style jsx>{`
       h1.Basics-name {
         font-size: 300%;
-        /* text-transform: uppercase; */
       }
       h2 {
         font-size: 125%;

@@ -1,12 +1,18 @@
 export default ({basics}) =>
   <div id="basics">
     <h2> {basics.label} </h2>
-    <div> { (basics.location.country ? basics.location.country : basics.location.countryCode) + ', '} {basics.location.city} </div>
-    <p> <b>E-mail</b> {basics.email} </p>
-    { basics.profiles.map((profile, i) =>
-      <p key={profile.network}>
-      <b> {profile.network} </b>
-      {profile.url}
+    <div>
+      {basics.location.countryCode + ' '}
+      {basics.location.city}
+    </div>
+    <p>
+      <b> E-mail </b>
+      {basics.email}
+    </p>
+    { basics.profiles.map((profile, p) =>
+      <p key={p}>
+        <b> {profile.network} </b>
+        {profile.url}
       </p>
     )}
     <style jsx>{`

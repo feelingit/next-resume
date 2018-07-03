@@ -3,9 +3,14 @@ export default ({education}) =>
     <h1> education </h1>
     { education.map((ed) =>
       <p>
-        <b>{ed.institution}</b>
-        <span>{ed.studyType} • {ed.startDate} ... {ed.endDate}</span>
-        {ed.courses.map((course) => <i>{course}</i>)}
+        <b> {ed.institution} </b>
+        <span>
+          {ed.studyType} •
+          {ed.startDate} ... {ed.endDate}
+        </span>
+        {ed.courses.map((course, c) =>
+          <i key={c}>{course}</i>
+        )}
       </p>
     )}
     <style jsx>{`

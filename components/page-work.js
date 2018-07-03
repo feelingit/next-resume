@@ -4,7 +4,10 @@ export default ({works}) =>
     { works.map((work, w) =>
       <p key={w}>
         <b>{work.position}</b>
-        <span>{work.company} • {work.startDate} ... {work.endDate}</span>
+        <span>
+          {work.company} •
+          {work.startDate} ... {work.endDate}
+        </span>
         {work.summary}
       </p>
     )}

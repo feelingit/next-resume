@@ -3,8 +3,17 @@ export default ({skills}) =>
     <h1> skills </h1>
     { skills.map((skill, s) =>
       <div key={s}>
-      <p><b>{skill.name}</b> ({skill.level})</p>
-      <p>{skill.keywords.map((keyword, k) => <span key={k}>{keyword}</span>)}</p>
+        <p>
+          <b> {skill.name} </b>
+          ({skill.level})
+        </p>
+        <p>
+          {skill.keywords.map((keyword, k) =>
+            <span key={k}>
+              {keyword}
+            </span>
+          )}
+        </p>
       </div>
     )}
     <style jsx>{`
