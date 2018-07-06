@@ -42,6 +42,10 @@ export default class Index extends React.Component {
             border: 1px solid transparent;
             margin: 10px 0;
           }
+          #Page {
+            width: 80%;
+            margin: 0 auto;
+          }
         `}</style>
       </div>
     )
