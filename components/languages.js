@@ -31,5 +31,5 @@ const languages = {
 }
 
 module.exports = function(language) {
-  return languages[language]
+  return languages[language] ? languages[language] : languages['english']
 }
