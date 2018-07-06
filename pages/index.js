@@ -1,17 +1,19 @@
 const resumes = require('../components/resume')
+const languages = require('../components/languages')
 import Page from '../components/page'
 
 export default class Index extends React.Component {
 
   static async getInitialProps ({query}) {
-    let resume = query.resume ? query.resume : 'resume'
-    return {resume: resume, resume: resumes[resume]}
+    let resume = resumes[query.resume] ? query.resume : 'resume'
+    let language = (languages(query.resume) ? query.resume : (resumes[resume].language ? resumes[resume].language : 'english'))
+    return {language: languages(language), resume: resumes[resume]}
   }
 
   render () {
     return (
       <div id={this.props.resume}>
-        <Page resume={this.props.resume} />
+        <Page language={this.props.language} resume={this.props.resume} />
         <style jsx>{`
 
         `}</style>
@@ -31,7 +33,7 @@ export default class Index extends React.Component {
           }
           h1 {
             color: #000;
-            font-family: 'Song Myung', serif;
+            font-family: 'Song Myung', 'Ubuntu Condensed', serif;
             font-size: 200%;
             font-weight: normal;
             text-transform: capitalize;

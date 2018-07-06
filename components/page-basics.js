@@ -1,5 +1,5 @@
 export default ({basics}) =>
-  <div id="basics">
+  <div id="Basics">
     <h2> {basics.label} </h2>
     <div>
       {basics.location.countryCode + ' '}
@@ -21,6 +21,9 @@ export default ({basics}) =>
       }
       h2 {
         font-size: 125%;
+      }
+      b {
+        display: none;
       }
     `}</style>
   </div>

@@ -1,6 +1,6 @@
-export default ({skills}) =>
-  <div id="skills">
-    <h1> skills </h1>
+export default ({title, skills}) =>
+  <div id="Skills">
+    <h1> {title} </h1>
     { skills.map((skill, s) =>
       <div key={s}>
         <p>

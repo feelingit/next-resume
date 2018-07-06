@@ -1,12 +1,11 @@
-export default ({education}) =>
-  <div id="education">
-    <h1> education </h1>
-    { education.map((ed) =>
-      <p>
+export default ({title, education}) =>
+  <div id="Education">
+    <h1> {title} </h1>
+    { education.map((ed, e) =>
+      <p key={e}>
         <b> {ed.institution} </b>
         <span>
-          {ed.studyType} •
-          {ed.startDate} ... {ed.endDate}
+          {ed.studyType} • {ed.startDate} ... {ed.endDate}
         </span>
         {ed.courses.map((course, c) =>
           <i key={c}>{course}</i>
