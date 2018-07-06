@@ -26,7 +26,6 @@ export default class Index extends React.Component {
           body {
             background: white;
             width: 100%;
-            max-width: 640px;
             margin: 50px auto;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
@@ -44,6 +43,7 @@ export default class Index extends React.Component {
           }
           #Page {
             width: 80%;
+            max-width: 640px;
             margin: 0 auto;
             word-wrap: break-word;
           }
