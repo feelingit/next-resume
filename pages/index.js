@@ -25,9 +25,9 @@ export default class Index extends React.Component {
           @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
           body {
             background: white;
-            width: 80%;
+            width: 100%;
             max-width: 640px;
-            margin: 50px 10%;
+            margin: 50px auto;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
           }
