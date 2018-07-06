@@ -45,6 +45,7 @@ export default class Index extends React.Component {
           #Page {
             width: 80%;
             margin: 0 auto;
+            word-wrap: break-word;
           }
         `}</style>
       </div>
