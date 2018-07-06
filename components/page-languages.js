@@ -1,8 +1,10 @@
+import Title from './title'
+
 export default ({title, languages}) =>
   <div id="Languages">
-    <h1> {title} </h1>
-    { languages.map((language, l) =>
-      <p key={l}>
+    <Title title={title} count={languages.length} />
+    { languages.map((language, languageIndex) =>
+      <p key={languageIndex}>
         {language.language} ({language.fluency})
       </p>
     )}

@@ -1,6 +1,8 @@
+import Title from './title'
+
 export default ({title, works}) =>
   <div id="Experience">
-    <h1> {title} </h1>
+    <Title title={title} count={works.length} />
     { works.map((work, w) =>
       <p key={w}>
         <b>{work.position}</b>

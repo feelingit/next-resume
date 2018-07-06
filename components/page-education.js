@@ -1,6 +1,8 @@
+import Title from './title'
+
 export default ({title, education}) =>
   <div id="Education">
-    <h1> {title} </h1>
+    <Title title={title} count={education.length} />
     { education.map((ed, e) =>
       <p key={e}>
         <b> {ed.institution} </b>

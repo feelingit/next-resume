@@ -1,7 +1,9 @@
+import Title from './title'
+
 export default ({title, summary}) =>
   <div id="Summary">
-    <h1> {title} </h1>
-    <div> {summary} </div>
+    <Title title={title} count={summary.length} />
+    <span> {summary} </span>
     <style jsx>{`
       h1.Basics-name {
         font-size: 300%;

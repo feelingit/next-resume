@@ -1,17 +1,16 @@
 import Title from './title'
 
-export default ({title, skills}) =>
-  <div id="Skills">
-    <Title title={title} count={skills.length} />
-    { skills.map((skill, s) =>
-      <div key={s}>
+export default ({title, interests}) =>
+  <div id="interests">
+    <Title title={title} count={interests.length} />
+    { interests.map((interest, interestIndex) =>
+      <div key={interestIndex}>
         <p>
-          <b> {skill.name} </b>
-          ({skill.level})
+          <b> {interest.name} </b>
         </p>
         <p>
-          {skill.keywords.map((keyword, k) =>
-            <span key={k}>
+          {interest.keywords.map((keyword, keywordIndex) =>
+            <span key={keywordIndex}>
               {keyword}
             </span>
           )}

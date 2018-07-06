@@ -8,8 +8,8 @@ import Languages from '../components/page-languages'
 //import Volunteer from '../components/page-volunteer'
 //import Awards from '../components/page-awards'
 //import Publications from '../components/page-publications'
-//import Interests from '../components/page-interests'
-//import References from '../components/page-references'
+import Interests from '../components/page-interests'
+import References from '../components/page-references'
 
 export default ({language, resume}) =>
   <div id="Page">
@@ -20,4 +20,6 @@ export default ({language, resume}) =>
     <Work title={language.work} works={resume.work} />
     <Education title={language.education} education={resume.education} />
     <Languages title={language.languages} languages={resume.languages} />
+    <Interests title={language.interests} interests={resume.interests} />
+    <References title={language.references} references={resume.references} />
   </div>
