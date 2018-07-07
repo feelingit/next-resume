@@ -1,6 +1,6 @@
 import Title from './title'
 
-export default ({title, summary}) =>
+export default ({title, summary = ''}) =>
   <div id="Summary">
     <Title title={title} count={summary.length} />
     <span> {summary} </span>

@@ -1,6 +1,6 @@
 import Title from './title'
 
-export default ({title, interests}) =>
+export default ({title, interests = [ ]}) =>
   <div id="interests">
     <Title title={title} count={interests.length} />
     { interests.map((interest, interestIndex) =>

@@ -1,6 +1,6 @@
 import Title from './title'
 
-export default ({title, references}) =>
+export default ({title, references = [ ]}) =>
   <div id="References">
     <Title title={title} count={references.length} />
     { references.map((reference, referenceIndex) =>

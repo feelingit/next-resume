@@ -1,6 +1,6 @@
 import Title from './title'
 
-export default ({title, languages}) =>
+export default ({title, languages = [ ]}) =>
   <div id="Languages">
     <Title title={title} count={languages.length} />
     { languages.map((language, languageIndex) =>
