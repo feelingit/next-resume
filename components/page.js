@@ -5,7 +5,7 @@ import Skills from '../components/page-skills'
 import Education from '../components/page-education'
 import Work from '../components/page-work'
 import Languages from '../components/page-languages'
-//import Volunteer from '../components/page-volunteer'
+import Volunteer from '../components/page-volunteer'
 import Awards from '../components/page-awards'
 import Publications from '../components/page-publications'
 import Interests from '../components/page-interests'
@@ -18,6 +18,7 @@ export default ({language, resume}) =>
     <Summary title={language.summary} summary={resume.basics.summary} />
     <Skills title={language.skills} skills={resume.skills} />
     <Work title={language.work} works={resume.work} />
+    <Volunteer title={language.volunteer} volunteer={resume.volunteer} />
     <Education title={language.education} education={resume.education} />
     <Languages title={language.languages} languages={resume.languages} />
     <Awards title={language.awards} awards={resume.awards} />
