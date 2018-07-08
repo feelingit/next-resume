@@ -1,6 +1,6 @@
 # next-resume
 
-Create a resume with next.js.
+Create a multi-language resume with next.js.
 
 ## Installing
 
