@@ -31,5 +31,10 @@ const languages = {
 }
 
 module.exports = function(language) {
-  return languages[language] ? languages[language] : languages['english']
+
+  if (!language || !languages[language]) {
+    return languages['english']
+  }
+
+  return languages[language]
 }
