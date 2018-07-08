@@ -1,4 +1,14 @@
+
 import Title from './title'
+
+/**
+ *  "languages": [
+ *     {
+ *       "language": "English",
+ *       "fluency": "Native speaker"
+ *     }
+ *  ]
+ */
 
 export default ({title, languages = [ ]}) =>
   <div id="Languages">

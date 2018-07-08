@@ -1,5 +1,17 @@
 import Title from './title'
 
+/**
+ *  "interests": [
+ *    {
+ *      "name": "Music",
+ *      "keywords": [
+ *        "Singing",
+ *        "Playing the piano"
+ *      ]
+ *    }
+ *  ]
+ */
+
 export default ({title, interests = [ ]}) =>
   <div id="interests">
     <Title title={title} count={interests.length} />

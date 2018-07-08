@@ -1,5 +1,22 @@
 import Title from './title'
 
+/**
+ *  "work": [
+ *    {
+ *      "company": "Company",
+ *      "position": "Position",
+ *      "website": "http://company.com",
+ *      "startDate": "2014",
+ *      "endDate": "Present",
+ *      "summary": "Description...",
+ *      "highlights": [
+ *        "highlight1",
+ *        "highlight2"
+ *      ]
+ *    }
+ *  ]
+ */
+
 export default ({title, works = [ ]}) =>
   <div id="Experience">
     <Title title={title} count={works.length} />
