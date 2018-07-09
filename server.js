@@ -4,13 +4,18 @@
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
+const config = require('./config')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
 // If you want to use another port change the value 3000 to any port you wish.
-const port = 3000
+// And then change the port number in your /package.json file
+const port = config.port
+
+// default resume file name (<name>.json) for index page
+const resume = config.resume
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -20,7 +25,7 @@ app.prepare().then(() => {
     const { pathname, query } = parsedUrl
 
     if (pathname === '/') {
-      app.render(req, res, '/index', { 'resume': 'resume' })
+      app.render(req, res, '/index', { 'resume': resume })
 
     // A robots.txt file indicates those parts of your site
     // you don’t want accessed by search engine crawlers.

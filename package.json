@@ -12,7 +12,7 @@
     "react-dom": "^16.4.1"
   },
   "scripts": {
-    "dev": "node server.js -p 3000",
+    "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   }
