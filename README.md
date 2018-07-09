@@ -2,6 +2,12 @@
 
 Create a multi-language resume with next.js.
 
+- [Installing](#installing)
+- [Starting](#starting)
+- [Port number](#port-number)
+- [JSON Resume](#json-resume)
+
+
 ## Installing
 
 Clone Repository.
@@ -40,13 +46,7 @@ pm2 start server.js -n <name>
 
 And go to `http://localhost:3000`. 
 
-## JSON Resume
-
-The default file is `/resume/resume.json`. 
-
-You can use [JSON Resume](http://jsonresume.org/) or [JSON Resume Editor](http://registry.jsonresume.org/) for editing your JSON resume. 
-
-## How to change the port number
+## Port number
 
 The default port is 3000. 
 
@@ -55,6 +55,13 @@ If you want to use another port open `/config.js` file and change the value 3000
 ```js
 'port': 3000,
 ```
+
+## JSON Resume
+
+The default file is `/resume/resume.json`. 
+
+You can use [JSON Resume](http://jsonresume.org/) or [JSON Resume Editor](http://registry.jsonresume.org/) for editing your JSON resume. 
+
 
 
 
