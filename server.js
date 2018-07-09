@@ -11,7 +11,6 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 // If you want to use another port change the value 3000 to any port you wish.
-// And then change the port number in your /package.json file
 const port = config.port
 
 // default resume file name (<name>.json) for index page
