@@ -18,12 +18,12 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "",
+        "username": "johndoe",
         "url": "https://www.linkedin.com/in/johndoe"
       },
       {
         "network": "GitHub",
-        "username": "",
+        "username": "johndoe",
         "url": "https://github.com/johndoe"
       }
     ]

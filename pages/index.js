@@ -1,5 +1,5 @@
-const resumes = require('../components/resume')
 const languages = require('../components/languages')
+const resumes = require('../config').resumes
 import Page from '../components/page'
 
 export default class Index extends React.Component {
