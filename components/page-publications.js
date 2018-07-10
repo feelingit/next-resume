@@ -1,16 +1,18 @@
 import Title from './title'
 
-/**
- *  "publications": [
- *    {
- *      "name": "Publication title",
- *      "publisher": "Company",
- *      "releaseDate": "2014",
- *      "website": "http://publication.com",
- *      "summary": "Description..."
- *    }
- *  ]
- */
+/*************************************************
+
+  "publications": [
+    {
+      "name": "Publication title",
+      "publisher": "Company",
+      "releaseDate": "2014",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ]
+
+*************************************************/
 
 export default ({title, publications = [ ]}) =>
   <div id="Publications">

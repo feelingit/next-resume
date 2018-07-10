@@ -1,21 +1,23 @@
 import Title from './title'
 
-/**
- *  "volunteer": [
- *    {
- *      "organization": "Organization",
- *      "position": "Position",
- *      "website": "http://organization.com",
- *      "startDate": "2014",
- *      "endDate": "Present",
- *      "summary": "Description...",
- *      "highlights": [
- *        "highlight1",
- *        "highlight2"
- *      ]
- *    }
- *  ]
- */
+/*************************************************
+
+  "volunteer": [
+    {
+      "company": "Organization",
+      "position": "Position",
+      "website": "http://organization.com",
+      "startDate": "2014",
+      "endDate": "Present",
+      "summary": "Description...",
+      "highlights": [
+        "highlight1",
+        "highlight2"
+      ]
+    }
+  ]
+
+*************************************************/
 
 export default ({title, volunteer = [ ]}) =>
   <div id="volunteer">

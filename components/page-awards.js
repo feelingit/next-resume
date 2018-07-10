@@ -1,15 +1,17 @@
 import Title from './title'
 
-/**
- *  "awards": [
- *    {
- *      "title": "Award title",
- *      "date": "2018",
- *      "awarder": "Awarder",
- *      "summary": "Description..."
- *    }
- *  ]
- */
+/*************************************************
+
+  "awards": [
+    {
+      "title": "Award title",
+      "date": "2018",
+      "awarder": "Awarder",
+      "summary": "Description..."
+    }
+  ]
+
+*************************************************/
 
 export default ({title, awards = [ ]}) =>
   <div id="Awards">

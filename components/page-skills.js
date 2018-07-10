@@ -1,18 +1,20 @@
 import Title from './title'
 
-/**
- *  "skills": [
- *    {
- *      "name": "Web Development",
- *      "level": "Master",
- *      "keywords": [
- *        "HTML",
- *        "CSS",
- *        "Javascript"
- *      ]
- *    }
- *  ]
- */
+/*************************************************
+
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    }
+  ]
+
+*************************************************/
 
 export default ({title, skills = [ ]}) =>
   <div id="Skills">

@@ -1,13 +1,15 @@
 import Title from './title'
 
-/**
- *  "references": [
- *    {
- *      "name": "Jane Doe",
- *      "reference": "Reference..."
- *    }
- *  ]
- */
+/*************************************************
+
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+
+*************************************************/
 
 export default ({title, references = [ ]}) =>
   <div id="References">
