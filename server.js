@@ -11,9 +11,9 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 // If you want to use another port change the value 3000 to any port you wish.
-const port = config.port
+const port = config.server.port
 
-// default resume file name (<name>.json) for index page
+// Default JSON Resume file name (<name>.json) for index page
 const resume = config.resume
 
 app.prepare().then(() => {
