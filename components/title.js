@@ -4,6 +4,6 @@ export default function(props) {
     return null;
   }
 
-  return <h1>{props.title}</h1>
+  return <h3>{props.title}</h3>
 
 }

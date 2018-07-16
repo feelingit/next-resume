@@ -12,7 +12,7 @@ body {
   font-weight: 300;
 }
 
-h1 {
+h1, h3 {
   color: #000;
   font-family: "Song Myung", "Ubuntu Condensed", serif;
   font-size: 200%;
