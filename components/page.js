@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from '../components/head'
 
 import Name from '../components/page-name'
 import Summary from '../components/page-summary'
@@ -13,13 +13,9 @@ import Publications from '../components/page-publications'
 import Interests from '../components/page-interests'
 import References from '../components/page-references'
 
-export default ({language, resume, theme = 'print'}) =>
+export default ({language, theme, resume}) =>
   <div class="page">
-    <Head>
-      <title>{resume.basics.name}</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link href={'/static/themes/' + theme + '.css'} rel="stylesheet" />
-    </Head>
+    <Head title={resume.basics.name} theme={theme} />
     <Name name={resume.basics.name} />
     <Basics basics={resume.basics} />
     <Summary title={language.summary} summary={resume.basics.summary} />
