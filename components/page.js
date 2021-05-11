@@ -14,7 +14,7 @@ import Interests from '../components/page-interests'
 import References from '../components/page-references'
 
 export default ({language, theme, resume}) =>
-  <div class="page">
+  <div className="page">
     <Head title={resume.basics.name} theme={theme} />
     <Name name={resume.basics.name} />
     <Basics basics={resume.basics} />
